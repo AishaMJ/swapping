@@ -1,5 +1,13 @@
 #include<studio.h>
 
+void swap(int *x,int *y)
+{
+int temp=*x;
+*x=*y;
+*y=temp;
+}
+
+
 void main()
 {
 
@@ -11,9 +19,7 @@ printf("\n values before swapping");
 
 	printf("\n x:%d\n y:%\n",x,y);
 
-int temp=x;
-x=y;
-y=temp;
+swap(&x, &y);
 
 	printf("\n values after swapping");
 	
